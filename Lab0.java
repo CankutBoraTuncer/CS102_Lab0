@@ -193,7 +193,7 @@ public class Lab0 {
      * 
      * @author Can Tucer
      * @param i (number to work on)
-     * @returns Result boolean
+     * @returns result boolean
      */
     public static boolean isEven(int i) {
         return (i % 2 == 0);
