@@ -66,8 +66,17 @@ public class Lab0 {
         }
     }
 
+    /**
+     * Displays the menu
+     * 
+     * @author Begüm Filiz Öz
+     */
     public static void displayMenu() {
-        // TODO: Display the menu, check main method
+        System.out.println( "1 - Find the maximum value in the array" );
+        System.out.println( "2 - Find the minimum value in the array" );
+        System.out.println( "3 - Find the average value in the array and the difference value of the array" );
+        System.out.println( "4 - Find the sum of elements with odd-numbered and even-numbered indexes" );
+        System.out.println( "5 - Exit the program" );
     }
 
     public static int findMinArr(int[] arr) {
@@ -92,8 +101,39 @@ public class Lab0 {
         return maximum;
     }
 
+    /**
+     * Gets user input and returns the input if it is valid
+     * 
+     * @author Begüm Filiz Öz
+     * @return user input
+     */
     public static int getUserInput() {
-        // TODO: Get user input from console and return the input.
+        Scanner input = new Scanner(System.in);
+        boolean inputValid = false;
+        while ( !inputValid )
+        {
+            System.out.print( "Please enter the number of the option you want to execute: ");
+            if ( input.hasNextInt() )
+            {
+                int userInput = input.nextInt();
+                if ( userInput <= 5 && userInput >= 1 )
+                {
+                    inputValid = true;
+                    return userInput;
+                }
+                else
+                {
+                    inputValid = false;
+                    System.out.println( "The option you entered is not valid.");
+                }
+            }
+            else
+            {
+                input.nextLine();
+                inputValid = false;
+                System.out.println( "The option you entered is not valid.");
+            }
+        }
         return 0;
     }
 
