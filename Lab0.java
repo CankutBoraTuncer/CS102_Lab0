@@ -72,7 +72,7 @@ public class Lab0 {
 
     public static int findMinArr(int[] arr) {
         int minimum = arr[0]; // can be initialized with any number inside the array
-        for (int i = 1; i < arr.length; i++) {
+        for (int i = 1; i < arr.length; i++) { // we've already gotten the first term
             if (arr[i] < minimum) {
                 minimum = arr[i];
             }
@@ -83,7 +83,7 @@ public class Lab0 {
 
     public static int findMaxArr(int[] arr) {
         int maximum = arr[0]; // can be initialized with any number inside the array
-        for (int i = 1; i < arr.length; i++) {
+        for (int i = 1; i < arr.length; i++) { // we've already gotten the first term
             if (arr[i] > maximum) {
                 maximum = arr[i];
             }
