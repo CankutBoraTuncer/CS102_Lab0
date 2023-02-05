@@ -141,9 +141,9 @@ public class Lab0 {
      * Returns the average of all values in a given array.
      * The function returns 0 if the given array has no elements.
      * 
-     * @author Emirhan Yagcioglu
-     * @param arr
-     * @return an integer representing the average of array elements
+     * @author  Emirhan Yagcioglu
+     * @param   arr
+     * @return  an integer representing the average of array elements
      */
     public static double findAvgArr(int[] arr) {
         double average;
@@ -165,9 +165,9 @@ public class Lab0 {
      * the average of all values in the array. Returns an array containing
      * the difference between the average all elements of the given array.
      * 
-     * @author Emirhan Yagcioglu
-     * @param arr
-     * @return an array consisting of each element subtracted from the average
+     * @author  Emirhan Yagcioglu
+     * @param   arr
+     * @return  an array consisting of each element subtracted from the average
      */
     public static double[] findDiffArr(int[] arr) {
         int arrayLength = arr.length;
@@ -182,9 +182,9 @@ public class Lab0 {
     /**
      * Converts given array into a string for printing purposes.
      * 
-     * @author Emirhan Yagcioglu
-     * @param arr
-     * @return string representation of an array
+     * @author  Emirhan Yagcioglu
+     * @param   arr
+     * @return  string representation of an array
      */
     public static String arrayToString(double[] arr) {
         int arrayLength = arr.length;
